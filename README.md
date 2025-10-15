@@ -77,22 +77,42 @@ Community App (for Citizens)
 
 `
 hisbah-system/
-├── backend/
-│   ├── api/
-│   ├── models/
-│   ├── auth/
-│   └── utils/
-├── frontend/
-│   ├── dashboard/
-│   └── mobile-app/
-├── docs/
-│   ├── training-manual.pdf
-│   ├── presentation-deck.pptx
-│   └── policy-draft.md
-├── .env.example
-├── README.md
-└── LICENSE
-`
+├── backend/                     # Backend server code (Node.js / Express)
+│   ├── api/                    # API route handlers (e.g., incidents, auth)
+│   ├── models/                 # Database schemas/models (e.g., User, Incident)
+│   ├── auth/                   # JWT authentication and middleware
+│   ├── utils/                  # Helper functions and validators
+│   ├── config/                 # Environment configs and constants
+│   └── index.js                # Main server entry point
+│
+├── frontend/                   # Frontend applications
+│   ├── dashboard/              # Admin dashboard (React)
+│   │   ├── components/         # Reusable UI components
+│   │   ├── pages/              # Dashboard views (e.g., Home, Reports)
+│   │   ├── services/           # API calls and data fetching
+│   │   └── App.jsx             # Main dashboard app
+│   │
+│   └── mobile-app/             # Mobile apps (React Native)
+│       ├── screens/            # App screens (e.g., ReportForm, MapView)
+│       ├── components/         # Reusable mobile components
+│       ├── assets/             # Icons, images, fonts
+│       └── App.js              # Main mobile app
+│
+├── docs/                       # Documentation files
+│   ├── README.md               # Overview of documentation folder
+│   ├── CONTRIBUTING.md         # Guidelines for contributors
+│   ├── LICENSE.md              # MIT License in Hausa
+│   ├── CHANGELOG.md            # Version history
+│   ├── DEPLOYMENT.md           # Developer deployment guide
+│   ├── api-docs.md             # API reference
+│   ├── structure.md            # Repository structure explanation
+│   └── training-manual.pdf     # Hausa/English training guide
+│
+├── .env.example                # Sample environment variables
+├── .gitignore                  # Files and folders to ignore in Git
+├── package.json                # Project dependencies and scripts
+├── README.md                   # Main project overview
+└── LICENSE.md                  # MIT license (duplicate for root)
 
 ---
 
